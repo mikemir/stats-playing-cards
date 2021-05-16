@@ -4,6 +4,7 @@ from card import Card
 CARD_TYPES = ['Espada', 'Trebol', 'Corazon', 'Diamante']
 CARD_VALUES = ['AS', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'JOTA', 'REINA', 'REY']
 
+
 class Deck:
 
     def __init__(self):
@@ -18,8 +19,8 @@ class Deck:
 
         return cards
 
-    def get_hand(self, quantify = 5):
-        return random.sample(self.__items, k = quantify)
+    def get_hand(self, quantify=5):
+        return random.sample(self.__items, k=quantify)
 
     def get_items(self):
         return self.__items
